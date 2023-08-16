@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('./assets/fonts/Bahnschrift.eot');
+    src: url('./assets/fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Bahnschrift.woff2') format('woff2'),
+        url('./assets/fonts/Bahnschrift.woff') format('woff'),
+        url('./assets/fonts/Bahnschrift.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Bahnschrift';
+    font-weight: normal;
+    font-style: normal;
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+  }
+.marquee .first {
+    transform: translateX(80%);
+  }
