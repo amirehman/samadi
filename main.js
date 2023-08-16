@@ -254,8 +254,8 @@ ScrollTrigger.matchMedia({
 
 const clouds = document.querySelector("#clouds");
 gsap.to(clouds, { 
-    duration: 20, 
-    xPercent: "-=100", 
+    duration: 5, 
+    xPercent: "-=40", 
     ease: "none", 
     repeat: -1,
     yoyo: true 
