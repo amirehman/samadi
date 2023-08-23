@@ -156,7 +156,7 @@ ScrollTrigger.matchMedia({
           scrollTrigger: {
               trigger: ".globe",
               start: "center center", 
-              end: "center+=505 top",
+              end: "center+=492 top",
               immediateRender: false,
               pin: true,
               pinSpacing: false,
