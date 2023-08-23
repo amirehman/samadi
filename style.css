@@ -24,12 +24,13 @@ body {
 }
 
 
-.marquee__inner {
+/* .marquee__inner {
     width: fit-content;
     display: flex;
     position: relative;
     white-space: nowrap;
   }
+
 .marquee .first {
     transform: translateX(80%);
-  }
+} */

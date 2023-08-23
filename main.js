@@ -61,8 +61,6 @@ document.querySelectorAll("li a").forEach((link) => {
     }
   });
 });
-
-
   
 
 // Adjustments using ScrollTrigger's matchMedia
@@ -70,74 +68,137 @@ ScrollTrigger.matchMedia({
 
     // Mobile breakpoint
     "(max-width: 768px)": function() {
-        gsap.to(".globe", {
-            y: "50px", 
-            scale: 0.5,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".globe",      
-                start: "-30% top",      
-                endTrigger: "#globeEnd", 
-                end: "-500%", 
-                pin: true,
-                pinSpacing: false,              
-                scrub: true       
-            }
-        });
+      gsap.to(".globe", {
+        scale: 0.5, 
+        y: "0px", 
+        ease: "none", 
+        scrollTrigger: {
+            trigger: ".globe",      
+            start: "top-=100 top",      
+            end: "center+=70 top",         
+            pin: true,
+            pinSpacing: false,              
+            scrub: true,
+        }
+      });
+
+      gsap.to(".globe", {
+        scale: 0.12, 
+        x: '46',
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".globe",
+            start: "bottom center", 
+            end: "center+=300 top",
+            immediateRender: false,
+            pin: true,
+            pinSpacing: false,
+            scrub: true
+        }
+      });
     },
 
     // Tablet breakpoint
     "(min-width: 769px) and (max-width: 1024px)": function() {
-        gsap.to(".globe", {
-            y: "-200px", 
-            scale: 0.4,
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".globe",      
-                start: "-30% top",      
-                endTrigger: "#globeEnd", 
-                end: "-300%", 
-                pin: true,
-                pinSpacing: false,              
-                scrub: true       
-            }
-        });
+
+      gsap.to(".globe", {
+        scale: 0.5, 
+        y: "0px", 
+        ease: "none", 
+        scrollTrigger: {
+            trigger: ".globe",      
+            start: "top-=100 top",      
+            end: "center+=70 top",         
+            pin: true,
+            pinSpacing: false,              
+            scrub: true,
+        }
+      });
+
+      gsap.to(".globe", {
+        scale: 0.07, 
+        x: '46',
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".globe",
+            start: "bottom center", 
+            end: "center+=395 top",
+            immediateRender: false,
+            pin: true,
+            pinSpacing: false,
+            scrub: true,
+            markers: true
+        }
+      });
     },
 
     // Laptop breakpoint
     "(min-width: 1025px) and (max-width: 1600px)": function() {
+      
         gsap.to(".globe", {
             scale: 0.5, 
-            y: "-300px", 
+            y: "0px", 
             ease: "none", 
             scrollTrigger: {
                 trigger: ".globe",      
-                start: "-30% top",      
-                endTrigger: "#globeEnd", 
-                end: "-160% top",         
+                start: "top-=100 top",      
+                end: "center+=100 top",         
                 pin: true,
                 pinSpacing: false,              
-                scrub: true       
+                scrub: true
             }
         });
+
+        gsap.to(".globe", {
+          scale: 0.045, 
+          x: '46',
+          ease: "none",
+          scrollTrigger: {
+              trigger: ".globe",
+              start: "center center", 
+              end: "center+=490 top",
+              immediateRender: false,
+              pin: true,
+              pinSpacing: false,
+              scrub: true,
+          }
+        });
+
     },
 
-    "(min-width: 1601px) and (max-width: 2200px)": function() {
-        gsap.to(".globe", {
-            scale: 0.5, 
-            y: "-100px", 
-            ease:'Power3.easeInOut',
-            scrollTrigger: {
-                trigger: ".globe",      
-                start: "-30% top",      
-                endTrigger: "#globeEnd", 
-                end: "-160% top",         
-                pin: true,
-                pinSpacing: false,              
-                scrub: true       
-            }
-        });
-    }
+    "(min-width: 1601px) and (max-width: 2600px)": function() {
+      
+      gsap.to(".globe", {
+          scale: 0.5, 
+          y: "0px", 
+          ease: "none", 
+          scrollTrigger: {
+              trigger: ".globe",      
+              start: "top-=100 top",      
+              end: "center+=150 top",         
+              pin: true,
+              pinSpacing: false,              
+              scrub: true
+          }
+      });
+
+      gsap.to(".globe", {
+        scale: 0.030, 
+        x: '46',
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".globe",
+            start: "center center", 
+            end: "center+=520 top",
+            immediateRender: false,
+            pin: true,
+            pinSpacing: false,
+            scrub: true,
+        }
+      });
+
+  },
+    
 
 });
 
@@ -249,7 +310,12 @@ ScrollTrigger.matchMedia({
 });
 
 
-
+gsap.to(".globe", {
+  rotation: 360,
+  ease: "none",
+  repeat: -1, 
+  duration: 200,
+});
 
 
 const clouds = document.querySelector("#clouds");
