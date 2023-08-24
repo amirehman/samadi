@@ -83,13 +83,13 @@ ScrollTrigger.matchMedia({
       });
 
       gsap.to(".globe", {
-        scale: 0.12, 
-        x: '46',
+        scale: 0.18, 
+        x: '85',
         ease: "none",
         scrollTrigger: {
             trigger: ".globe",
             start: "bottom center", 
-            end: "center+=300 top",
+            end: "center+=390 top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
@@ -116,13 +116,13 @@ ScrollTrigger.matchMedia({
       });
 
       gsap.to(".globe", {
-        scale: 0.07, 
-        x: '46',
+        scale: 0.12, 
+        x: '85',
         ease: "none",
         scrollTrigger: {
             trigger: ".globe",
             start: "bottom center", 
-            end: "center+=395 top",
+            end: "center+=488 top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
@@ -137,7 +137,7 @@ ScrollTrigger.matchMedia({
       
         gsap.to(".globe", {
             scale: 0.5, 
-            y: "0px", 
+            y: "0px",
             ease: "none", 
             scrollTrigger: {
                 trigger: ".globe",      
@@ -150,13 +150,13 @@ ScrollTrigger.matchMedia({
         });
 
         gsap.to(".globe", {
-          scale: 0.04, 
-          x: '46',
+          scale: 0.065, 
+          x: '85',
           ease: "none",
           scrollTrigger: {
               trigger: ".globe",
               start: "center center", 
-              end: "center+=492 top",
+              end: "center+=59% top",
               immediateRender: false,
               pin: true,
               pinSpacing: false,
@@ -183,13 +183,13 @@ ScrollTrigger.matchMedia({
       });
 
       gsap.to(".globe", {
-        scale: 0.030, 
-        x: '46',
+        scale: 0.05, 
+        x: '85',
         ease: "none",
         scrollTrigger: {
             trigger: ".globe",
             start: "center center", 
-            end: "center+=520 top",
+            end: "center+=610 top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
