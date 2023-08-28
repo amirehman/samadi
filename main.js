@@ -69,13 +69,13 @@ ScrollTrigger.matchMedia({
     // Mobile breakpoint
     "(max-width: 768px)": function() {
       gsap.to(".globe", {
-        scale: 0.5, 
+        scale: 0.6, 
         y: "0px", 
         ease: "none", 
         scrollTrigger: {
             trigger: ".globe",      
             start: "top-=20% top",      
-            end: "center+=35% top",         
+            end: "center+=40% top",         
             pin: true,
             pinSpacing: false,              
             scrub: true,
@@ -84,12 +84,12 @@ ScrollTrigger.matchMedia({
 
       gsap.to(".globe", {
         scale: 0.12, 
-        x: '60',
+        x: '55',
         ease: "none",
         scrollTrigger: {
             trigger: ".globe",
             start: "center-=10% top+=20%",      
-            end: "center+=122% top",
+            end: "center+=103% top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
@@ -98,7 +98,6 @@ ScrollTrigger.matchMedia({
       });
 
     },
-
 
     // Mobile breakpoint Landscape
     // (min-width: 915px) and (min-height: 412px)
@@ -111,10 +110,11 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
             trigger: ".globe",      
             start: "top-=90 top",      
-            end: "center+=70 top",         
+            end: "center+=50 top",         
             pin: true,
             pinSpacing: false,              
-            scrub: true
+            scrub: true,
+            markers: true
         }
       });
 
@@ -125,7 +125,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
             trigger: ".globe",
             start: "center center", 
-            end: "center+=37% top",
+            end: "center+=41% top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
@@ -139,13 +139,13 @@ ScrollTrigger.matchMedia({
     "(min-width: 769px) and (max-width: 1024px)": function() {
 
       gsap.to(".globe", {
-        scale: 0.5, 
+        scale: 0.7, 
         y: "0px", 
         ease: "none", 
         scrollTrigger: {
             trigger: ".globe",      
             start: "top-=100 top",      
-            end: "center+=70 top",         
+            end: "center+=150 top",         
             pin: true,
             pinSpacing: false,              
             scrub: true
@@ -159,7 +159,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
             trigger: ".globe",
             start: "bottom center", 
-            end: "center+=488 top",
+            end: "center+=410 top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
@@ -172,13 +172,13 @@ ScrollTrigger.matchMedia({
     "(min-width: 1025px) and (max-width: 1600px)": function() {
       
         gsap.to(".globe", {
-            scale: 0.5, 
+            scale: 0.6, 
             y: "0px",
             ease: "none", 
             scrollTrigger: {
                 trigger: ".globe",      
                 start: "top-=100 top",      
-                end: "center+=100 top",         
+                end: "center+=290 top",         
                 pin: true,
                 pinSpacing: false,              
                 scrub: true
@@ -192,7 +192,7 @@ ScrollTrigger.matchMedia({
           scrollTrigger: {
               trigger: ".globe",
               start: "center center", 
-              end: "center+=59.5% top",
+              end: "center+=43% top",
               immediateRender: false,
               pin: true,
               pinSpacing: false,
@@ -205,13 +205,13 @@ ScrollTrigger.matchMedia({
     "(min-width: 1601px) and (max-width: 2600px)": function() {
       
       gsap.to(".globe", {
-          scale: 0.5, 
+          scale: 0.6, 
           y: "0px", 
           ease: "none", 
           scrollTrigger: {
               trigger: ".globe",      
               start: "top-=100 top",      
-              end: "center+=150 top",         
+              end: "center+=370 top",         
               pin: true,
               pinSpacing: false,              
               scrub: true
@@ -225,7 +225,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
             trigger: ".globe",
             start: "center center", 
-            end: "center+=610 top",
+            end: "center+=33% top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
