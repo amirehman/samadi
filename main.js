@@ -153,13 +153,13 @@ ScrollTrigger.matchMedia({
       });
 
       gsap.to(".globe", {
-        scale: 0.1, 
+        scale: 0.12, 
         x: '85',
         ease: "none",
         scrollTrigger: {
             trigger: ".globe",
             start: "bottom center", 
-            end: "center+=470 top",
+            end: "center+=410 top",
             immediateRender: false,
             pin: true,
             pinSpacing: false,
